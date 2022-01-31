@@ -10,14 +10,15 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro. 
 
 const gridElement = document.getElementById('grid');
 
-for (let i = 1; i >=100; i++) {
-    
+for (let i = 1; i <=100; i++) {
+
     const node = document.createElement('div');
+    node.innerHTML = i;
     node.classList.add('square');
     gridElement.appendChild(node);
 
-    // node.addEventListener('click', function() {
-    //     console.log(this);
-    //     this.classList.add('clicked');
-    // })
+     node.addEventListener('click', function() {
+         console.log(this);
+         this.classList.add('clicked');
+     })
 }
