@@ -8,12 +8,16 @@ Quando l’utente clicca su ogni cella, la cella cliccata si colora di azzurro. 
 
 
 
-const containerElement = document.getElementById('grid');
+const gridElement = document.getElementById('grid');
 
 for (let i = 1; i >=100; i++) {
+    
     const node = document.createElement('div');
     node.classList.add('square');
-    console.log(node);
+    gridElement.appendChild(node);
 
-    containerElement.appendChild(node);
+    // node.addEventListener('click', function() {
+    //     console.log(this);
+    //     this.classList.add('clicked');
+    // })
 }
