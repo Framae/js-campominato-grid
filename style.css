@@ -3,3 +3,25 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: turquoise;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 150px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    width: calc(100% / 8);
+    height: calc(100% / 8);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
